@@ -1,0 +1,263 @@
+body{
+    background-color: #5F0089;
+}
+select{
+    color: #5F0089;
+    width: 100px;
+    border: none;
+}
+.clock{
+    position: absolute;
+    top: 34px;
+    left: 124px;
+    width: 204px;
+    height: 77px;
+    background: transparent;
+   
+}
+.time-alarm{
+    position: absolute;
+    top: 149px;
+    left: 124px;
+    width: 517px;
+    height: 335px;
+    background-color: #ffffff;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    opacity: 1;
+}
+.mrng{
+position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 34px;
+   height: 34px;
+}
+.day1{
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    color: #5F0089;
+}
+.time1{
+    position: absolute;
+    top: 25px;
+    right: 24px;
+}
+.afternoon{
+    position: absolute;
+    top: 102px;
+    left: 25px;
+    width: 34px;
+    height: 34px;
+}
+.day2{
+    position: absolute;
+    top: 105px;
+    left: 180px;
+    color: #5F0089;
+}
+.time2{
+    position: absolute;
+    top: 102px;
+    right: 24px;
+}
+.evening{
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    width: 34px;
+    height: 34px;
+}
+.day3{
+    position: absolute;
+    top: 203px;
+    left: 180px;
+    color: #5F0089;
+}
+.time3{
+    position: absolute;
+    top: 200px;
+    right: 24px;
+}
+.night{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 34px;
+    height: 34px;
+    color: #5F0089;
+}
+.day4{
+    position: absolute;
+    bottom: 25px;
+    left: 180px;
+    color: #5F0089;
+}
+.time4{
+    position: absolute;
+    bottom: 20px;
+    right: 24px;
+}
+.goodM{
+    font-family:'Rubik Mono One', sans-serif; 
+    position: absolute;
+    top: 495px;
+   left: 124px;
+   width: 517px;
+   height: 50px;
+   background-color:#9140B5;
+   border-radius: 10px;
+   color: #ffffff;
+
+}
+.set{
+    color: #ffffff;
+    background:linear-gradient(113deg,
+     #6E54EC 0%,
+     #CB52F8 40%, 
+     #FC5EFF 81%,
+     #F1A7C5 100%);
+     border-radius: 4px;
+     width: 230px;
+     height: 30px;
+     text-align: center;
+     padding-top: 10px;
+     position: absolute;
+     top: 555px;
+     left: 124px;
+}
+.timing{
+    width: 253px;
+    height: 90px;
+    background-color:#9140B5;
+    border-radius: 10px;
+    color:#F25CFE;
+    position: absolute;
+    top: 555px;
+    left: 360px;
+    text-align: left;
+    padding: 2px;
+}
+.clk-time{
+    width: 536px;
+   height: 100px;
+   background-color: #ffffff;
+   position: absolute;
+   top: 42px;
+  left: 660px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3D087B;
+}
+.timeM{
+    color: #3D087B;
+    text-align: center;
+
+}
+.hourM{
+    background-color: #F6E2FF;
+    width: 56px;
+    height: 72px;
+    color: #3D087B;
+    text-align: center;
+
+}
+.minM{
+    background-color: #F6E2FF;
+    width: 56px;
+    height: 72px; 
+    color: #3D087B;
+    text-align: center;
+}
+.secM{
+    background-color: #F6E2FF;
+    width: 56px;
+    height: 72px; 
+    color: #3D087B;
+    text-align: center;
+}
+.AM{
+   background: linear-gradient(
+    #bb41e7 0%,
+    #FC5EFF 100%
+   );
+   width: 56px;
+   height: 72px; 
+   color: #ffffff;
+   text-align: center;
+}
+.breakfast{
+    width: 536px;
+    height: 80px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 162px;
+    left: 660px;
+   border-radius: 10px;
+   font-family: 'Rubik Mono One', sans-serif; 
+   color: #8E53F0;
+   text-align: center;
+}
+.pic{
+    position: absolute;
+    top: 260px;
+    left: 660px;
+    width: 536px;
+    height: 341px;
+}
+@media (max-width:375px){
+    
+    .clock{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+    }
+    .clk-time{
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        width: 80vw;
+    }
+    .time-alarm{
+        position: absolute;
+        top: 235px;
+        left: 30px;
+        width: 80vw;
+    }
+    .goodM{
+       position: absolute;
+       top: 585px;
+       left: 30px;
+       width: 80vw;
+       text-align: center;
+    }
+    .set{
+        position: absolute;
+        top: 645px;
+        left: 30px;
+        width: 80vw; 
+    }
+    .timing{
+        position: absolute;
+        top: 695px;
+        left: 30px;
+        width: 80vw; 
+        text-align: center;
+    }
+    .breakfast{
+        position: absolute;
+        top: 800px;
+        left: 30px;
+        width: 80vw; 
+    }
+    .pic{
+        position: absolute;
+        top: 890px;
+        left: 30px;
+    }
+    
+    
+}

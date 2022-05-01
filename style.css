@@ -109,6 +109,7 @@ position: absolute;
    background-color:#9140B5;
    border-radius: 10px;
    color: #ffffff;
+   padding-top: 25px;
 
 }
 .set{
@@ -124,17 +125,17 @@ position: absolute;
      text-align: center;
      padding-top: 10px;
      position: absolute;
-     top: 555px;
+     top: 580px;
      left: 124px;
 }
 .timing{
     width: 253px;
-    height: 90px;
+    height: 110px;
     background-color:#9140B5;
     border-radius: 10px;
     color:#F25CFE;
     position: absolute;
-    top: 555px;
+    top: 580px;
     left: 360px;
     text-align: left;
     padding: 2px;
@@ -160,24 +161,27 @@ position: absolute;
 .hourM{
     background-color: #F6E2FF;
     width: 56px;
-    height: 72px;
+    height: 60px;
     color: #3D087B;
     text-align: center;
+    padding-top: 15px;
 
 }
 .minM{
     background-color: #F6E2FF;
     width: 56px;
-    height: 72px; 
+    height: 60px; 
     color: #3D087B;
     text-align: center;
+    padding-top: 15px;
 }
 .secM{
     background-color: #F6E2FF;
     width: 56px;
-    height: 72px; 
+    height: 60px; 
     color: #3D087B;
     text-align: center;
+    padding-top: 15px;
 }
 .AM{
    background: linear-gradient(
@@ -185,9 +189,10 @@ position: absolute;
     #FC5EFF 100%
    );
    width: 56px;
-   height: 72px; 
+   height: 60px; 
    color: #ffffff;
    text-align: center;
+   padding-top: 15px;
 }
 .breakfast{
     width: 536px;
@@ -200,10 +205,11 @@ position: absolute;
    font-family: 'Rubik Mono One', sans-serif; 
    color: #8E53F0;
    text-align: center;
+   padding-top: 50px;
 }
 .pic{
     position: absolute;
-    top: 260px;
+    top: 300px;
     left: 660px;
     width: 536px;
     height: 341px;
@@ -225,7 +231,38 @@ position: absolute;
         position: absolute;
         top: 235px;
         left: 30px;
-        width: 80vw;
+       width: 80vw;
+    }
+    .day1{
+        position: absolute;
+        left: 70px;
+    }
+    .time1{
+        position: absolute;
+        right: 10px;
+    }
+    .day2{
+        position: absolute;
+        left: 70px;
+    }
+    .time2{
+        position: absolute;
+        right: 10px;
+    }.day3{
+        position: absolute;
+        left: 70px;
+    }
+    .time3{
+        position: absolute;
+        right: 10px;
+    }
+    .day4{
+        position: absolute;
+        left: 70px;
+    }
+    .time4{
+        position: absolute;
+        right: 10px;
     }
     .goodM{
        position: absolute;
@@ -236,28 +273,31 @@ position: absolute;
     }
     .set{
         position: absolute;
-        top: 645px;
+        top: 670px;
         left: 30px;
         width: 80vw; 
     }
     .timing{
         position: absolute;
-        top: 695px;
+        top: 720px;
         left: 30px;
         width: 80vw; 
         text-align: center;
     }
     .breakfast{
         position: absolute;
-        top: 800px;
+        top: 845px;
         left: 30px;
         width: 80vw; 
     }
     .pic{
         position: absolute;
-        top: 890px;
+        top: 990px;
         left: 30px;
+        width: 80vw;
     }
-    
+    .pic>img{
+        width: 80vw;
+    }
     
 }

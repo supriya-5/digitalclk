@@ -1,5 +1,5 @@
 body{
-    background-color: #5F0089;
+    background-color: #3D087B;
 }
 select{
     color: #5F0089;
@@ -19,7 +19,7 @@ select{
     position: absolute;
     top: 149px;
     left: 124px;
-    width: 517px;
+    width: 520px;
     height: 335px;
     background-color: #ffffff;
     border: 1px solid #EDEDED;
@@ -36,13 +36,13 @@ position: absolute;
 .day1{
     position: absolute;
     top: 25px;
-    left: 180px;
+    left: 140px;
     color: #5F0089;
 }
 .time1{
     position: absolute;
     top: 25px;
-    right: 24px;
+    right: 54px;
 }
 .afternoon{
     position: absolute;
@@ -54,13 +54,13 @@ position: absolute;
 .day2{
     position: absolute;
     top: 105px;
-    left: 180px;
+    left: 140px;
     color: #5F0089;
 }
 .time2{
     position: absolute;
     top: 102px;
-    right: 24px;
+    right: 54px;
 }
 .evening{
     position: absolute;
@@ -72,13 +72,13 @@ position: absolute;
 .day3{
     position: absolute;
     top: 203px;
-    left: 180px;
+    left: 140px;
     color: #5F0089;
 }
 .time3{
     position: absolute;
     top: 200px;
-    right: 24px;
+    right: 54px;
 }
 .night{
     position: absolute;
@@ -91,13 +91,16 @@ position: absolute;
 .day4{
     position: absolute;
     bottom: 25px;
-    left: 180px;
+    left: 140px;
     color: #5F0089;
 }
 .time4{
     position: absolute;
     bottom: 20px;
-    right: 24px;
+    right: 54px;
+}
+.dropdown{
+    width: 150px;
 }
 .goodM{
     font-family:'Rubik Mono One', sans-serif; 
@@ -117,7 +120,7 @@ position: absolute;
     background:linear-gradient(113deg,
      #6E54EC 0%,
      #CB52F8 40%, 
-     #FC5EFF 81%,
+     #F1A7C5 81%,
      #F1A7C5 100%);
      border-radius: 4px;
      width: 230px;
@@ -128,6 +131,17 @@ position: absolute;
      top: 580px;
      left: 124px;
 }
+.set:hover{
+    background: linear-gradient(113deg,
+    #F1A7C5 10%,
+    #F1A7C5 40%, 
+    #CB52F8 81%,
+    #6E54EC 100%);
+
+    content: "party time!";
+    cursor: pointer;
+}
+
 .timing{
     width: 253px;
     height: 110px;

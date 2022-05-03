@@ -117,11 +117,7 @@ position: absolute;
 }
 .set{
     color: #ffffff;
-    background:linear-gradient(113deg,
-     #6E54EC 0%,
-     #CB52F8 40%, 
-     #F1A7C5 81%,
-     #F1A7C5 100%);
+    background:  linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
      border-radius: 4px;
      width: 230px;
      height: 30px;
@@ -133,14 +129,22 @@ position: absolute;
 }
 .set:hover{
     background: linear-gradient(113deg,
-    #F1A7C5 10%,
-    #F1A7C5 40%, 
+    #F1A7C5 0%,
+    #FC5EFF 40%, 
     #CB52F8 81%,
-    #6E54EC 100%);
-
-    content: "party time!";
-    cursor: pointer;
+    #6E54EC 100%); 
 }
+  .set::before{
+      content: "SET ALARM";
+  }
+  .set:hover::after{
+      content: "PARTY TIME !!";
+     
+  }
+  
+  .set:hover::before{
+      display: none;
+  }
 
 .timing{
     width: 253px;

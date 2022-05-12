@@ -1,5 +1,6 @@
 body{
     background-color: #3D087B;
+
 }
 select{
     color: #5F0089;
@@ -170,6 +171,29 @@ position: absolute;
   justify-content: space-around;
   align-items: center;
   color: #3D087B;
+  z-index: 3;
+}
+.clk-time1{
+    width: 416px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+  left: 730px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   opacity: 0.71;
+   z-index: 2;
+}
+.clk-time2{
+    width: 416px;
+    height: 100px;
+    position: absolute;
+    top: 55px;
+  left: 730px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   opacity: 0.22;
+   z-index: 1;
 }
 .timeM{
     color: #3D087B;
@@ -242,6 +266,18 @@ position: absolute;
     .clk-time{
         position: absolute;
         top: 120px;
+        left: 30px;
+        width: 80vw;
+    }
+    .clk-time1{
+        position: absolute;
+        top: 128px ;
+        left: 30px;
+        width: 80vw;
+    }
+    .clk-time2{
+        position: absolute;
+        top:133px ;
         left: 30px;
         width: 80vw;
     }

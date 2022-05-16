@@ -3,38 +3,6 @@
 
 function displayTime(){
 
-    // var time = new time();
-    // var hours = time.getHours();
-    // var minutes = time.getMinutes();
-    // var seconds = time.getSeconds();
-    // var Am = document.getElementById('session');
-
-    // if(hours >=12){
-    //     Am.innerHTML = "PM";
-    // }
-    // else{
-    //     Am.innerHTML = "AM";
-    // }
-    
-    // if(hours >12){
-    //     hours = hours-12;
-    // }
-   
-
-    // if(hours < 10){
-    //   hours =  "0"+ hours;
-    // }
-    
-   
-
-    // if(minutes < 10){
-    //     minutes = "0"+minutes;
-    // }
-
-    // if(seconds < 10){
-    //     seconds = "0"+seconds;
-    // }
-
     var time = new Date();
     var hours = time.getHours() > 12 ? time.getHours() -12 : time.getHours();
     var minutes = time.getMinutes() <10 ? "0" + time.getMinutes() : time.getMinutes();
@@ -85,7 +53,7 @@ function displayGreeting(){
       displayValue()
 }
     
-    
+  
 
 
 

@@ -100,10 +100,19 @@ position: absolute;
     bottom: 20px;
     right: 54px;
 }
-.dropdown{
+#dropdown-wake{
     width: 150px;
 }
-.goodM{
+#dropdown-lunch{
+    width: 150px;
+}
+#dropdown-evening{
+    width: 150px;
+}
+#dropdown-night{
+    width: 150px;
+}
+#greeting{
     font-family:'Rubik Mono One', sans-serif; 
     position: absolute;
     top: 495px;
@@ -114,8 +123,10 @@ position: absolute;
    border-radius: 10px;
    color: #ffffff;
    padding-top: 25px;
+   
 
 }
+
 .set{
     color: #ffffff;
     background:  linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
@@ -195,12 +206,12 @@ position: absolute;
    opacity: 0.22;
    z-index: 1;
 }
-.timeM{
+#timeM{
     color: #3D087B;
     text-align: center;
 
 }
-.hourM{
+#hourM{
     background-color: #F6E2FF;
     width: 56px;
     height: 60px;
@@ -209,7 +220,7 @@ position: absolute;
     padding-top: 15px;
 
 }
-.minM{
+#minM{
     background-color: #F6E2FF;
     width: 56px;
     height: 60px; 
@@ -217,7 +228,7 @@ position: absolute;
     text-align: center;
     padding-top: 15px;
 }
-.secM{
+#secM{
     background-color: #F6E2FF;
     width: 56px;
     height: 60px; 
@@ -225,7 +236,7 @@ position: absolute;
     text-align: center;
     padding-top: 15px;
 }
-.AM{
+#session{
    background: linear-gradient(
     #bb41e7 0%,
     #FC5EFF 100%
@@ -236,7 +247,7 @@ position: absolute;
    text-align: center;
    padding-top: 15px;
 }
-.breakfast{
+#msg{
     width: 536px;
     height: 80px;
     background-color: #ffffff;
@@ -249,13 +260,17 @@ position: absolute;
    text-align: center;
    padding-top: 50px;
 }
-.pic{
+
+#pic{
     position: absolute;
     top: 300px;
     left: 660px;
     width: 536px;
     height: 341px;
+    
 }
+
+    
 @media (max-width:375px){
     
     .clock{
@@ -318,13 +333,14 @@ position: absolute;
         position: absolute;
         right: 10px;
     }
-    .goodM{
+    #greeting{
        position: absolute;
        top: 585px;
        left: 30px;
        width: 80vw;
        text-align: center;
     }
+   
     .set{
         position: absolute;
         top: 670px;
@@ -338,20 +354,22 @@ position: absolute;
         width: 80vw; 
         text-align: center;
     }
-    .breakfast{
+    #msg{
         position: absolute;
         top: 845px;
         left: 30px;
         width: 80vw; 
     }
-    .pic{
+   
+    #pic{
         position: absolute;
         top: 990px;
         left: 30px;
         width: 80vw;
     }
-    .pic>img{
+    #pic>img{
         width: 80vw;
     }
+  
     
 }

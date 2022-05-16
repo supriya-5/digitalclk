@@ -20,7 +20,7 @@
          <div class="day1"> Set wake up time </div>
           <div class="time1">
         
-                <select name="Dropdown" class="dropdown">
+                <select name="Dropdown" id="dropdown-wake">
                     <option value="">Select Your Time</option>
                     <option value="" class="dropdown-text">Select Time</option>
                     <option value="0" class="dropdown-text">12 AM - 01 AM</option>
@@ -58,7 +58,7 @@
                 <img src="./lunch_time.png"> </div>
                <div class="day2"> Set lunch time </div>
                 <div class="time2">
-                    <select name="Dropdown" class="dropdown">
+                    <select name="Dropdown" id="dropdown-lunch">
                         <option value="">Select Your Time</option>
                         <option value="" class="dropdown-text">Select Time</option>
                         <option value="0" class="dropdown-text">12 AM - 01 AM</option>
@@ -95,7 +95,7 @@
                    <div class="day3"> Set nap time </div>
                     <div class="time3">
                     
-                            <select name="Dropdown" class="dropdown">
+                            <select name="Dropdown" id="dropdown-evening" >
                                 <option value="">Select Your Time</option>
                                 <option value="" class="dropdown-text">Select Time</option>
                                 <option value="0" class="dropdown-text">12 AM - 01 AM</option>
@@ -131,7 +131,7 @@
                         <img src="./nights_stay_FILL0_wght400_GRAD0_opsz48.png"> </div>
                        <div class="day4"> Set night time </div>
                         <div class="time4">
-                                <select name="Dropdown" class="dropdown">
+                                <select name="Dropdown" id="dropdown-night">
                                     <option value="">Select Your Time</option>
                                     <option value="" class="dropdown-text">Select Time</option>
                                     <option value="0" class="dropdown-text">12 AM - 01 AM</option>
@@ -164,37 +164,42 @@
 
     </div>
 
-    <div class="goodM" >
-        GOOD MORNING!! WAKE UP !!
+    <div id="greeting" >  
     </div>
-    <div class="set">
-    <div class="party">
+    
+    <div class="set" onclick="displayValue()">
     </div>
 </div>
     <div class="timing">
-        Wake Up Time : 10AM - 11AM<br>
-        Lunch Time : 12PM - 1PM<br>
-         Nap Time : 4PM - 5PM <br>
-         Night Time : 8PM-9AM
+       <div id="wake"> Wake Up Time : <br></div>
+       <div id="lunch"> Lunch Time : <br></div>
+        <div id="nap"> Nap Time :  <br></div>
+        <div id="night" >Night Time : </div>
     </div>
 
     <div class="clk-time">
-       <div class="timeM">TIME</div>
-       <div class="hourM">10<br>hours</div>:
-       <div class="minM">00<br>mins</div>:
-       <div class="secM">01<br>secs</div>
-       <div class="AM">
-          AM
+       <div id="timeM">TIME</div>
+       <div id="hourM">00</div>:
+       <div id="minM">00</div>:
+       <div id="secM">00</div>
+       <div id="session">
+          
        </div>
         </div>
     <div class="clk-time1"></div>
     <div class="clk-time2"></div>
-    <div class="breakfast">
-        GRAB SOME HEALTHY BREAKFAST!!!
+
+    <div id="msg">   
     </div>
-    <div class="pic">
-        <img src="./Component 30 – 1.png"  alt="">
+    
+    <div id="pic">  
     </div>
+    
+
+
+
+
+    <script src="index.js"></script>
     
 </body>
 </html>

@@ -365,11 +365,11 @@ position: absolute;
         position: absolute;
         top: 990px;
         left: 30px;
-        width: 80vw;
+        /* width: 80vw; */
+        background-size: 80vw;
+        background-repeat: no-repeat;
     }
-    #pic>img{
-        width: 80vw;
-    }
+   
   
     
 }

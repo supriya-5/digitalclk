@@ -4,25 +4,51 @@
 function displayTime(){
 
     var time = new Date();
-    var hours = time.getHours() > 12 ? time.getHours() -12 : time.getHours();
-    var minutes = time.getMinutes() <10 ? "0" + time.getMinutes() : time.getMinutes();
-    var seconds = time.getSeconds() <10 ? "0" + time.getSeconds() : time.getSeconds();
-    var AM_PM = time.getHours() <= 12 ? "AM" : "PM";
+    var hours =time.getHours();
+    var minutes = time.getMinutes();
+    var seconds = time.getSeconds();
+    var session = document.getElementById('session');
+
+    if(hours > 12){
+      hours = hours-12;
+    }
+    if(hours <10){
+      "0" + time.getHours();
+    }
+
+    if(minutes < 10){
+      "0" + time.getMinutes();
+    }
+    
+    if(seconds < 10){
+      "0" + time.getSeconds();
+    }
+    
+    if(hours >= 12){
+      session.innerHTML ="AM";
+    }
+    else{
+      session.innerHTML ="PM";
+    }
+   
+   
 
     document.getElementById('hourM').innerHTML = hours + "<br>hours";
     document.getElementById('minM').innerHTML = minutes + "<br>mins";
     document.getElementById('secM').innerHTML = seconds + "<br>secs";
-    document.getElementById("session").innerHTML = AM_PM;
+    
 }
 setInterval(displayTime, 1000);
+
 displayTime();
 
 
-function displayGreeting(){
+
+ function displayGreeting(){
 
     var time = new Date();
     var hours = time.getHours();
-   
+    
 
     let waketime = document.getElementById("dropdown-wake").value
     let lunchtime = document.getElementById("dropdown-lunch").value
@@ -30,30 +56,34 @@ function displayGreeting(){
     let nighttime = document.getElementById("dropdown-night").value
 
     if(waketime == hours){
-        document.getElementById("pic").style.backgroundImage = "url('./Component\ 30\ –\ 1.png')"
-        document.getElementById("msg").innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
         document.getElementById("greeting").innerHTML = "GOOD MORNING!! WAKE UP !!";
+        document.getElementById("msg").innerHTML = "GRAB SOME HEALTHY BREAKFAST!!!";
+        document.getElementById("pic").style.backgroundImage = "url('./Component\ 30\ –\ 1.png')"
 
     }
+  
     if (lunchtime == hours) {
-        document.getElementById("pic").style.backgroundImage = "url('./lunch.png')";
-        document.getElementById("mesg").innerHTML = "LET'S HAVE SOME LUNCH !!";
+
         document.getElementById("greeting").innerHTML = "GOOD AFTERNOON !! TAKE SOME SLEEP";
+        document.getElementById("msg").innerHTML = "LET'S HAVE SOME LUNCH !!";
+        document.getElementById("pic").style.backgroundImage = "url('./lunch.png')";
       }
       if (naptime == hours) {
-        document.getElementById("pic").style.backgroundImage =  "url('./evening_image.png')";
-        document.getElementById("msg").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
         document.getElementById("greeting").innerHTML = "GOOD EVENING !!";
+        document.getElementById("msg").innerHTML = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
+        document.getElementById("pic").style.backgroundImage =  "url('./evening_image.png')";
+
       }
       if (nighttime == hours) {
-        document.getElementById("pic").style.backgroundImage = "url('./Component\ 32\ –\ 1.png')";
-        document.getElementById("msg").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
         document.getElementById("greeting").innerHTML = "GOOD NIGHT !!";
+        document.getElementById("msg").innerHTML = "CLOSE YOUR EYES AND GO TO SLEEP";
+        document.getElementById("pic").style.backgroundImage = "url('./Component\ 32\ –\ 1.png')";
+      
       }
+    
       displayValue()
 }
-    
-  
+
 
 
 
@@ -96,9 +126,12 @@ function displayValue(){
     } else {
       document.getElementById("nap").innerHTML = "Nap time : " + value3;
     }
+    
     if (nighttime == "none") {
         document.getElementById("night").innerHTML = "";
       } else {
         document.getElementById("night").innerHTML = "night time : " + value4;
       }
   }
+
+ 
